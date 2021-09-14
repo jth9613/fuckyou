@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>
+$.get('fuckyou.svg', function(data) {
+    $(document.body).append(data.documentElement);
+
+    $('#LOGO').click(function() {
+        $('#myDrawing').fadeIn();
+    });
+
+});
+
+</script>
+
+<style>
+    #pencil {
+      cursor: pointer;
+    }
+  </style>
